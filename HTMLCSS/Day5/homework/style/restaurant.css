@@ -1,0 +1,15 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	font:14px "微软雅黑", "新宋体", "华文隶书", "华文楷体";
+	}
+.green{
+	color:green;
+	}
+.red{
+	color:red;
+	}
+#blue{
+	color:blue;
+	}

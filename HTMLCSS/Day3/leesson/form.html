@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>表单</title>
+</head>
+
+<body>
+	<form action="1.php" method="" name="subForm" enctype="multipart/form-data">
+    <!--method ： post 与 get的区别 -->
+    <table border="0" bordercolor="blue" width="300">
+    <tr>
+    	<td>用户名：</td>
+        <td><input  type="text" name="nikename" id="pwd" value="sunshine_habit"/></td>
+    </tr>
+    <tr>
+        <td>密码：</td>
+        <td> <input type="password" name="pwd" id="pwd" value="sunshine" /></td>
+    </tr>
+    <tr>
+    	<td colspan="2">
+        <input type="button" name="commit" id="commit" value="普通按钮" />
+        <input type="submit" name="commit" id="commit" value="提交按钮" />
+        <input type="reset" name="clear" id="clear" value="重置按钮" />
+    	<input type="image"  src="../homework/images/golobal_center.png"name="imagebtn" id="imgbtn" value=""/>
+        </td>	
+     </tr>
+        </table>
+        
+        <table>
+        	<caption>注册</caption>
+        	<tr>
+            	<td>姓名:</td>
+                <td><input  type="text" name="name" id="name" value="sunshine_habit"/></td>
+            </tr>
+            	<td>昵称:</td>
+                <td><input type="text" name="nickname" id="nickname" value="abcd123" /></td>
+            <tr>
+           	</tr>
+            	<td>性别:</td>
+                <td>
+                <input type="radio" name="boy" id="boy" value="Male" checked="checked" />男
+                <input type="radio" name="boy" id="girl" value="FeMale" />女
+                <input type="radio" name="boy" id="others" value="others" />其它
+                 </td>
+            <tr>
+            	<td >爱好：</td>
+                <td>
+                <input type="checkbox" name="reading" id="reading" value="reading" checked="checked" />读书
+                <input type="checkbox" name="reading" id="basketball" value="basketball"  checked="checked" />篮球
+                <input type="checkbox" name="film" id="film" value="film" />电影
+                </td>
+            </tr>
+            <tr>
+            	<td >家乡：
+                </td>
+                <td>
+                	<select id="province" name="province" >
+                    	<option value="">省份</option>
+                        <option value="1" selected="selected">北京</option>
+                        <option value="2">上海</option>
+                        <option value="3">河北</option>
+                    </select>
+                    <select id="city" name="city" >
+                    	<option value="">城市</option>
+                        <option value="" selected="selected">北京市</option>
+                        <option value="">石家庄市</option>
+                        <option value="">保定市</option>
+                        <option value="">衡水市</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+            	<td>自我介绍：
+                </td>
+                <td>
+                <textarea  id="introduce" name="introduce" cols="30"  rows="10">
+                我的老家就住在这个屯，我是这个屯里土生土长的人~
+                我的老家就住在这个屯，我是这个屯里土生土长的人~
+                我的老家就住在这个屯，我是这个屯里土生土长的人~
+                我的老家就住在这个屯，我是这个屯里土生土长的人~
+                我的老家就住在这个屯，我是这个屯里土生土长的人~
+                </textarea>
+                </td>
+            </tr>            
+            	<tr>
+            	<td>上传头像：
+                </td>
+                <td>
+                <input type="file" id="photo" name="photo" value="" />
+                </td>
+            </tr>
+           	<tr>
+            	<td>隐藏域：
+                </td>
+                <td>
+                <input type="hidden" id="hid" name="hid" value="12" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

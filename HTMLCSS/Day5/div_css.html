@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>css选择器</title>
+<style>
+	p{
+		color:red;
+		}
+
+	div{
+		color:green;
+		}
+	h1{
+		color:purple;
+		}
+	/*ID选择器*/
+	#blue{
+		color:blue;
+		}
+	/*类（class）选择器*/
+	.italic{
+		font-style:italic;
+		}
+	.orange{
+		color:orange;
+		}
+	.important{
+		background:#FFC;
+		}
+	p.important{
+		color:pink;
+		}
+	/*后代选择器*/
+	p span{
+		color:blue;
+		}
+	table tr td input{
+		height:30px;
+		border-color:green;
+		}
+		
+</style>
+</head>
+
+<body>
+	<p>我<span>最大的快乐</span>是，我通过努力，过的每一天，都是我想要的。</p>
+    <table>
+    	<tr>
+        	<td>
+            	<label>姓名：</label>
+                <input type="text" id="" name="" /> 
+            </td>
+        </tr>
+    </table>
+      
+	<p id="blue" class="important pink">aaaaaaaaaaaaaa</p>
+    <p class="orange italic">bbbbbbbbbbbb</p>
+    <p class="italic">ccccccccccccccc</p>
+    
+    <div>aaaaaaaaaa</div>
+    <div class="orange">bbbbbbbbb</div>
+    <div class="italic">cccccccccccc</div>
+    
+    <h1 class="important">aaaaaaaaaaaaaaaaaaaaa</h1>
+    <h1 class="important">bbbbbbbbbbbbbbbbbb</h1>
+    <h1 class="italic">ccccccccccccccccccccccc</h1>
+</body>
+</html>

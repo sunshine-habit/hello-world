@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	font-family:  "微软雅黑";
+	}
+p, ul li, ol li, span{
+	font-size:14px;
+	}
+.red{
+	color:red;
+	}
+.gray{
+	color:#999;
+	}
+#top{
+	 background:#62D29D;
+	 color:white;
+	 width:200px;
+	}
+#top span{
+	font-size:30px;
+	}
+p span{
+	 font-weight:bold;
+	 font-size:24px;
+	}

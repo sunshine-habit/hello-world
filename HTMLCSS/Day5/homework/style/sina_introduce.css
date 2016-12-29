@@ -15,9 +15,14 @@ table{
 
 	width:760px;}
 table td{
-		border-bottom:1px  dashed blue;
+		border-bottom:1px  dashed  #CCCCCC;
 	}
 span{
 	color:#69F;
 	font-weight:normal;
+	}
+.ttitle{
+	color:#999;
+	font-family:"新宋体";
+	font-weight:bold;
 	}

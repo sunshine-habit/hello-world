@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>开源中国注册</title>
+<style type="text/css">
+	body{
+		font-family:"微软雅黑";
+		}
+	span{
+		font-size:14px;	
+		}
+	table tr{
+		height:40px;}
+	table tr td.right{
+	 	 border: thick red;
+		 text-align:right;
+		 font-weight:bold;				 	
+		 }
+	form input{
+		height:30px;
+		}
+	input[type="text"],input[type="password"]{
+		border:2px solid #0CC;
+		width:200px;	
+		}
+	input[id="email"]{
+		width:300px;
+		}
+	input[id="code"]{
+		width:100px;
+		}
+	input[type="button"]{
+		background:#0C3;
+		border:1px solid #0c3;
+		width:150px;
+		font:18px "微软雅黑";
+		color:white;
+		font-weight:bold;
+		}
+	#green{
+		color:green;		
+		}
+	a:link{color:purple;}
+	a:visited{color:tomato;}
+	a:hover{color:green;}
+	a:active{color:blue;}
+	
+	a[title]{
+		font-size:24px;
+		font-weight:normal;
+		text-decoration:none;/*无修改，超链接去下划线	*/
+		}
+	
+</style>
+</head>
+
+<body>
+    <h1>加入开源中国&nbsp;&nbsp;<a title="a" href="#">通过手机号码注册开源账号</a></h1>
+    <form action="" method=""  name="">
+        <table>
+            <tr>
+                <td class="right">电子邮箱：</td>
+                <td><input  type="text" id="email" name="email" value=""/><span>不建议使用Gmail，原因你知道的</span></td>
+            </tr>
+            <tr>
+                <td class="right">昵称：</td>
+                <td><input type="text" id="nickname" name="nickname" value="" /><span>不能超过10个字</span></td>
+            </tr>
+            <tr>
+                <td class="right">登录密码：</td>
+                <td><input type="password" id="pwd" name="pwd" value="" /><span>至少6位，必须字母数字或特殊符号和数字结合</span></td>
+            </tr>
+            <tr>
+                <td class="right">密码确认：</td>
+                <td><input type="password" id="pwd1" name="pwd1" value="" /></td>
+            </tr>
+            <tr>
+                <td class="right">验证码：</td>
+                <td><input type="text" id="yzm" name="yzm" value="" /><span><a href="#">换另外一张图</a></span></td>
+            </tr>
+             <tr>
+                <td></td>
+                <td><input type="button" id="signin" name="signin" value="注册新用户>>" /></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td ><span id="green">oschina倡导真实的技术交流环境，请注册成功后上传真实头像，<a href="#">了解详情。</a></span></td>
+            </tr>
+        
+        </table>
+	</form>
+
+</body>
+</html>

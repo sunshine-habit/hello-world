@@ -2,9 +2,68 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>无标题文档</title>
+<title>css选择器练习</title>
+<style>
+/*属性选择器*/
+	a[title]{
+		font: 20px "微软雅黑";
+		}
+	a[alt][title]{
+		font:24px "楷体";
+		}
+	form input {
+		border-color:red;
+		width:150px;
+		}
+	form input[type="button"]{
+		border-color:green;
+		height:30px;
+		}
+
+		/*伪类选择器*/
+		a:link{			/*未被访问的链接样式*/
+			color:#0099CC;				
+			}
+		a:visited{		/*未已民经被访问过的链接样式*/
+			color:brown;
+			}
+		a:hover{		/*鼠标悬浮时的链接样式*/
+			color:green;
+			}
+		a:active{		/*链接被选中（点击瞬间）时的样式，一定要放在hover后设置！*/
+			color:#4CB;
+			}
+			
+		p a:link{color:tomato;}
+		p a:visited{color:tomato;}
+		p a:hovor{color:tomato;}
+		p a:active{color:tomato;}
+				
+</style>
 </head>
 
 <body>
+    <a href="#" alt="one" title="one">我是一个超链接</a><br  />
+    <a href="#" title="two">我是第二个超链接</a><br  />
+    <a href="#" title="three">this is a new hyperlink.</a><br  />
+   	<p><a href="#" title="four">this is a new hyperlink.</a></p>
+	<form>
+        <table>
+            <tr>
+                <td>昵称：</td>
+                <td><input  type="text" name="nickname" id="nickname" value=""/></td>
+            </tr>
+            <tr>
+                <td>密码：</td>
+                <td><input type="password" name="pwd" id="pwd" value="" /></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="button" name="login" id="login" value="登录" /></td>
+            </tr>
+        </table>
+	</form>
+
+
 </body>
 </html>

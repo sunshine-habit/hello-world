@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>背景属性</title>
+<style type="text/css">
+	/*背景颜色*/
+	h1{background-color:yellow;}
+	div{
+		border:1px solid red;
+		width:960px;
+		height:800px;
+		background-color:pink;
+	}
+	#bg{
+			background:url(images/flower.jpg) no-repeat center 250px scroll;
+		}
+	#bj{		
+		background-image:url(images/flower.jpg);
+		background-repeat: no-repeat;
+		background-position:left center;
+		background-size:300px 500px;
+		background-attachment:scroll;	/*图片随页面滚动*/
+		}
+	
+	
+</style>
+</head>
+
+<body>
+	<h1>我是标题1，看我的背景</h1>
+    <div id="bg">我是div，看我的背景</div>
+    <div id="bj">我的背景是图片</div>
+</body>
+</html>

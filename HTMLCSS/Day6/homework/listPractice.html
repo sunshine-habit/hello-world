@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>列表属性练习</title>
+<style type="text/css">
+		div, dl, dt, dd, ol, ul, li, p {
+			padding:0;
+			margin:0;
+			}
+		body{
+			font:14px "微软雅黑", "新宋体", "华文隶书", "华文楷体";
+			}
+		#one{
+		width:350px;
+		height:460px;
+		border:1px solid skyblue;		
+		}		
+		#one dl dt.dlTitle{
+			background:#003366;
+			color:white;
+			height:40px;
+			line-height:40px;		/*结合行高，可以垂直居中！*/
+			font-size:20px;
+			padding-left:5px;
+			}			
+		#one dl dt{
+			background:#C1FFE0;
+			color:#06F;
+			font-weight:bold;
+			font-size:18px;
+			padding-left:5px;
+			}
+		#one dl dd{
+			padding-left:15px;
+			}
+		#one dl dd p{
+			line-height:20px;
+			}
+						
+		#two{
+		width:280px;
+		height:200px;
+		border:1px solid #993333;
+		}
+		#two ol li{
+			list-style:none;
+			padding-left:5px;
+			/*list-style-type:decimal;
+			list-style-position:inside;*/
+			list-style:decimal inside;
+			line-height:22px;
+			border-bottom:1px #CCC dashed;			
+			}
+		#two p{
+			background:#FF0033;
+			font-size:20px;
+			color:white;
+			}
+		#two ol li a:link{
+			text-decoration:none;
+			color:pink;
+			}
+		#two ol li a:visited{
+			color:green;
+			}
+		#two ol li a:hover{
+			color:#FF0033;
+			}
+		#two ol li a:active{
+			color:brown;
+			}
+</style>
+</head>
+
+<body>	
+    <div id="one">
+        <dl>
+ 	       	<dt class="dlTitle">京东商城——全部商品分类</dt>
+        	<dt>图书、音像、电子书刊</dt>
+            <dd>
+            <p>
+            文艺、经管励志、人文社科</br>
+        	计算机互联网、科普建筑、工业技术、英文原版</br>
+        	音乐影视、教育音像、游戏影视/动漫周边</br>
+        	电子书、数字音乐、有声读物
+            </p>
+            </dd>
+            <dt>家用电器</dt>
+            <dd>
+            <p>
+            电视、空调、洗衣机、冰箱</br>
+            厨卫大电、厨房小电、生活电器</br>
+            个护健康、家庭影音、进口电器
+            </p>
+            </dd>
+            <dt>钟表</dt>
+            <dd>
+            <p>
+            天梭 浪琴 美度</br>
+            CK 斯沃琪 坤格</br>
+            卡西欧  西铁城 精工</br>
+            飞亚达 罗西尼 海鸥</br>
+            颂拓 佳明 宜准</br>
+            精工挂钟 霸王POWER 迪斯尼</br>
+            积优 傲途 老皮匠
+            </p>
+            </dd>
+        </dl>
+    </div>
+    <div id="two">
+    	<p>大家都喜欢买的美容品</p>
+    	<ol>        	
+            <li><a href="#">雅诗兰黛肌透修护眼部精华霜15ml</a></li>
+            <li><a href="#">御泥坊葡萄籽琉璃亮颜黑面膜</a></li>
+            <li><a href="#">提拉淡化眼纹，SpaTreatment蛇毒眼膜</a></li>
+            <li><a href="#">膜法世家玻尿酸水磁场微纤维面膜贴</a></li>
+            <li><a href="#"> 倩碧温和液体洁面皂200ML</a></li>
+            <li><a href="#">佰草集嫩肤面膜赠太极泥套装</a></li>
+            <li><a href="#">无印良品滋润型 水乳套组400ml+400ml</a></li>
+        </ol>
+        
+    </div>
+</body>
+</html>

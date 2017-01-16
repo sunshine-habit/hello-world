@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>块级元素</title>
+<style type="text/css">
+	/*块级元素*/
+	div, p, ul, ol{
+		border:2px solid green;
+		width:600px;
+		height:200px;
+	}
+	/*块级元素转换成行内元素*/
+	div, p{
+		display:inline;
+		}
+	ul li{
+		display:none;
+		}
+		
+	/*行内元素*/
+	span, a, strong, b, label {
+		border:2px solid orange;
+		}
+
+	/*行内元素转换成块级元素*/
+	span, a, strong, b, label {
+		display:block;
+			}
+		
+</style>
+</head>
+
+<body>
+	<div>
+    	我是div
+    </div>
+    <p>
+    	我是p
+    </p>
+    <ul>
+    	<li>我是li</li>
+        <li>我是li</li>
+        <li>我是li</li>
+    </ul>
+    <span>
+     	我是span
+    </span>
+    <a>
+   		我是a
+    </a>
+    <b>
+    	我是b标签
+    </b>
+    <strong>
+    	我是strong
+    </strong>
+    <label>
+    	我是label
+    </label>
+    
+    
+</body>
+</html>

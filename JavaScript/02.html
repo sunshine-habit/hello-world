@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>分支语句和页面</title>
+		<script type="text/javascript">
+			function show(){
+			//日期函数，哼，首字母大写！！ Date()
+			var date = new Date();
+			//getYear(),年份基数是1900，当前年份；getFullYear(),获取的完整的年份，兼容; 
+			var year = date.getFullYear();
+			//getMonth(),获取的是月份，从0开始，因为存的是数组
+			var month = date.getMonth();
+			var day = date.getDate();
+			var week = date.getDay();
+			alert(week);
+			var weekName;
+			//switch (){case: break} 条件用冒号分隔，条件分支语句，条件满足，break中断；
+			switch(week){
+				case 1:
+					weekName = "星期一";
+					break; 
+				case 2:
+					weekName = "星期二";
+					break; 
+				case 3:
+					weekName = "星期三";
+					break; 
+				case 4:
+					weekName = "星期四";
+					break; 
+				case 5:
+					weekName = "星期五";
+					break; 
+				case 6:
+					weekName = "星期六";
+					break; 
+				case 0:
+					weekName = "星期日";
+					break; 
+				}
+			
+			var hours = date.getHours();
+			var minutes = date.getMinutes();
+			var seconds = date.getSeconds();
+			
+			//if 分支语句
+			var newHours;
+			if(hours <= 12)
+				{
+				newHours = hours + ":" + minutes + ":" + seconds + " AM";
+				}
+			else	
+				{
+				hours = hours - 12;
+				newHours = hours + ":" + minutes + ":" + seconds + " PM";
+				}
+				
+				
+			
+			var time = year + "年" + month + "月" + day + "日" + newHours +" " + weekName;
+			
+			//看半天。。 以下是赋值语句，把变量time赋值给左边；
+			//'time'元素名，id = 'time'
+			//感觉document.getElementById('time').innerHTML 是读的HTML的源代码
+			//document 区分大小写的。。
+			document.getElementById('time').innerHTML = time ;
+	
+			}
+			function showTime(){
+				//问大白菜这个函数的意思。。。。没整明白，函数里面套函数？？
+				//setInterval();		
+				//多长时间执行方法，只执行一次；
+				setTimeout(show,1000);
+			}
+		</script>
+	</head>
+	<body onload = "showTime()" >
+		<div>大白菜，miss you~ </div>
+		<div id = "time"></div>
+	</body>
+</html>
+

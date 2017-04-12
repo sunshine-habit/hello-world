@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.tab{
+				width:200px;
+				background-color: purple;
+				height: 30px;
+				float: left;
+				text-align: center;
+			}
+			/*#tab1{
+				float: left;
+			}
+			#tab2{
+				float: right;
+			}*/
+			.tab:hover{
+				background-color:green;
+			}
+			.con{
+				background-color: pink;
+			}
+			#box1{
+				width: 600px;
+				height: 30px;
+			}
+			#box2{
+				width: 400px;
+				height: 30px;
+			}
+			.con{
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box1">
+			<div id="tab1" class="tab" onclick="show(1)">tab1</div>
+			<div id="tab2" class="tab" onclick="show(2)">tab2</div>
+			<div id="tab3" class="tab" onclick="show(3)">tab3</div>
+		</div>
+		<div id ="box2">
+			<div id="1" class="con">tab1的内容</div>
+			<div id="2" class="con">tab2的内容</div>
+		</div>
+		<script type="text/javascript">
+			function show(id){
+				var con = document.getElementsByClassName("con");
+				for(var i =0 ; i<con.length;i++){
+					if(id==3){
+						con[i].style.display="none";
+					}else{
+						if(con[i].id==id){
+							con[i].style.display="block";
+						}else{
+							con[i].style.display="none";
+						}
+					}
+					
+					
+				}
+				
+			}
+		</script>
+	</body>
+	
+</html>

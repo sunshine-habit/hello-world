@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="checkbox" class="habit" value="运动" />运动
+		<input type="checkbox" class="habit" value="音乐" />音乐
+		<input type="checkbox" class="habit" value="画画" />画画
+		<input type="checkbox" class="habit" value="其它" />其它
+		<br  />
+		<input type="button" value="我的爱好" onclick="show()"/>
+		<input type="button" value="还原" onclick="reset()" />
+		<div id="xz"></div>
+		
+		<script type="text/javascript">
+		function show(){
+			var choose = document.getElementsByClassName("habit");
+			var xuanze = "";
+			for(var i = 0; i < choose.length; i++){
+				if(choose[i].checked==true){
+					xz.innerHTML = xz.innerHTML + choose[i].value;
+				}				
+			}
+			
+			
+		}
+		function reset(){
+			var choose =document.getElementsByClassName("habit");
+			xz.innerHTML="";
+			for(var i=0; i<choose.length; i++){
+				if(choose[i].checked==true){
+					choose[i].checked= false;
+				}
+			}
+		}
+			
+		</script>
+	</body>
+	
+</html>

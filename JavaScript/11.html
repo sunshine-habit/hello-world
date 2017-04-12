@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			input{
+				margin: 5px;				
+				}
+			textarea{
+				margin: 0px;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<form>
+			<label>请输入姓名：</label>
+			<input type="text" id="userName" />
+			<br />
+			<label>请输入年龄：</label>
+			<input type="text" name="userAge" />
+			<br />
+			<label>请输入留言：</label>
+			<textarea  rows="5" name="userMessage"></textarea>
+			<br />
+			<input type="button" name="submit" value="提交" onclick="confirmA()" />
+		</form>
+		<script type="text/javascript">
+			function confirmA(){
+				var userName = document.getElementById("userName");
+				alert("aa"+userName.value);
+				if(userName.value==""||userName.value==null||userName.value==undefined){
+					alert(userName.value);
+					return false;
+				}
+				else{
+					
+					return true;
+				}
+			}
+			
+		</script>
+	</body>
+</html>

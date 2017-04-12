@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+	</head>
+	<body>
+		<h1 id="num"></h1>
+		<input type="button" name="start" value="start" onclick="start()"/>
+		<input type="button" name="stop" value="stop" onclick="stop()" />
+		
+		<script type="text/javascript">
+			var num=10;
+			var action;
+			function time(){
+				if(num>=0){
+					num--;
+					document.getElementById("num").innerHTML=num;
+				} else{
+					alert("停止计时了");
+					stop();
+				}
+				
+			}
+			function start(){
+				action=setInterval(time,1000);
+			}
+			function stop(){
+				clearInterval(action);
+				alert("stop 倒计时停止2");
+			}
+		</script>
+	</body>
+</html>

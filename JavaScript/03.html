@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>循环语句</title>
+		
+	</head>
+	<body>
+		<script type = "text/javascript">
+			var s1 = [34,99,84,67,95,67];
+			var s2 = [88,93,96,50,97,86];
+			var s3 = [89,87,93,43,95,85];
+			var stu = [s1,s2,s3];
+			var sum;
+			var average;
+			for( var i = 0; i < stu.length; i++){
+				sum = 0;
+				average = 0;
+				for(var j = 0; j < stu[i].length; j++){
+					sum = sum + stu[i][j];
+					
+				}
+				average =  sum/stu[i].length;
+				//num.toFixed(n) 四舍五入为指定小数位数的数字
+				document.write("第" + (i+1) + "个班的平均成绩是" + average.toFixed(2) + "<br />");
+			}
+			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<p>新浪</p>
+		<input type="button" value="改变层结构" onclick="changeJiegou()"/>
+		<br />
+		<input type="text" class="season" value="春" />
+		<input type="text" class="season" value="夏" />
+		<input type="text" class="season" value="秋" />
+		<input type="text" class="season" value="冬" />
+		<br />
+		<input type="submit" value="input" onclick="showInput()"/>
+		<input type="reset"  value="season" onclick="showSeason()"/>
+		<div id="neirong"></div>
+	</body>
+	<script type="text/javascript">
+		var neirong = document.getElementById("neirong");
+		function changeJiegou(){
+			var con = document.getElementsByTagName("p");
+			if(con[0].innerHTML == "新浪"){
+				con[0].innerHTML ="百度";
+			} else{
+				con[0].innerHTML="新浪";
+				
+			}
+						
+		}
+		function showInput(){
+			var iii = document.getElementsByTagName("input");
+			var aaa="";
+			for(var i=0; i<iii.length; i++){
+				aaa = aaa +iii[i].value + "<br />";
+				
+			}
+			neirong.innerHTML=aaa;
+		}
+		function showSeason(){
+			var season = document.getElementsByClassName("season");
+			var seasons = "";
+			for(var i = 0; i<season.length; i++){
+				seasons = seasons + season[i].value +"<br/>";
+			}
+			neirong.innerHTML = seasons;
+			//document.write(seasons);
+		}
+		
+	</script>
+</html>

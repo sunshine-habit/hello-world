@@ -19,7 +19,7 @@
 			<input type="text" id="userName" />
 			<br />
 			<label>请输入年龄：</label>
-			<input type="text" name="userAge" />
+			<input type="text" id="userAge" value="-1" />
 			<br />
 			<label>请输入留言：</label>
 			<textarea  rows="5" name="userMessage"></textarea>
@@ -28,18 +28,27 @@
 		</form>
 		<script type="text/javascript">
 			function confirmA(){
-				var userName = document.getElementById("userName");
+				/*var userName = document.getElementById("userName");
 				alert("aa"+userName.value);
 				if(userName.value==""||userName.value==null||userName.value==undefined){
-					alert(userName.value);
+					alert("请填写姓名");
 					return false;
 				}
 				else{
 					
 					return true;
+				}*/
+				var userAge = document.getElementById("userAge");
+				var n = userAge.value;
+				if(n>1){
+					alert("大于1");
+				}else{
+					alert("小于1");
 				}
+				
 			}
-			
+				
+				
 		</script>
 	</body>
 </html>

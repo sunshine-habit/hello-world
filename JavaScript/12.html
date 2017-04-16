@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>tab页面切换效果</title>
+		<style type="text/css">
+			
+			.tabtitle{
+				
+				float: left;
+				height: 30px;
+				padding: 5px 15px 5px 15px;
+				border: 1px solid green;
+				background-color: greenyellow;
+			}
+			.tabtitle:hover{
+				background-color:paleturquoise ;
+			}
+			#box2{
+				float:none;
+				background: bisque;
+				width: 270px;
+				
+			}
+			.contant{
+				margin-top: 40px;
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box1">
+			<div class="tabtitle" onclick="">tab1</div>
+			<div class="tabtitle">tab2</div>
+			<div class="tabtitle">tab3</div>
+			<div class="tabtitle">tab4</div>
+		</div>
+		<div id="box2">
+			<div id="1" class="contant">内容1</div>
+			<div id="2" class="contant">内容2</div>
+			<div id="3" class="contant">内容3</div>
+			<div id="4" class="contant">内容4</div>
+		</div>
+	</body>
+</html>

@@ -4,12 +4,16 @@
 		<meta charset="UTF-8">
 		<title>tab页面切换效果</title>
 		<style type="text/css">
-			
+			#box1{
+				height: 31px;
+				width: 288px;
+			}
 			.tabtitle{
 				
 				float: left;
 				height: 30px;
-				padding: 5px 15px 5px 15px;
+				width: 70px;
+				padding: 0px;
 				border: 1px solid green;
 				background-color: greenyellow;
 			}
@@ -17,23 +21,30 @@
 				background-color:paleturquoise ;
 			}
 			#box2{
-				float:none;
-				background: bisque;
-				width: 270px;
+				float:inherit;
+				width: 288px;
+				height: 200px;
+				background-color: palegreen;
 				
 			}
 			.contant{
-				margin-top: 40px;
+				background-color: darkcyan;
+				height: 200px;
+				font-family: "微软雅黑";
+				line-height: 200px; 
+				font-size: 30px;
+				text-align: center;
 				display: none;
 			}
+			
 		</style>
 	</head>
 	<body>
 		<div id="box1">
-			<div class="tabtitle" onclick="">tab1</div>
-			<div class="tabtitle">tab2</div>
-			<div class="tabtitle">tab3</div>
-			<div class="tabtitle">tab4</div>
+			<div class="tabtitle" onclick="showCon(1)">tab1</div>
+			<div class="tabtitle" onclick="showCon(2)">tab2</div>
+			<div class="tabtitle" onclick="showCon(3)">tab3</div>
+			<div class="tabtitle" onclick="showCon(4)">tab4</div>
 		</div>
 		<div id="box2">
 			<div id="1" class="contant">内容1</div>
@@ -41,5 +52,27 @@
 			<div id="3" class="contant">内容3</div>
 			<div id="4" class="contant">内容4</div>
 		</div>
+		<script type="text/javascript">
+			
+			function showCon(num){
+				var s=document.getElementsByClassName("contant");
+				for(var i =0; i<4; i++){
+					if(num==s[i].id){
+						//alert(s[i].id);
+						s[i].style.display="block";
+					}else{
+						s[i].style.display="none";
+					}
+				}
+				
+			}
+			function aaa(){
+				var month = 1;
+				var gz=prompt("请输入"+month+"月工资","");
+			}
+			
+
+			
+		</script>
 	</body>
 </html>

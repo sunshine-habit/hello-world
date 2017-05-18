@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>test</title>
+		<script type="text/javascript">
+			document.write("hello");
+			document.write("<table border='1px' bordercolor='green'  width='300' height='200px'  cellspacing='0' align='center' >");
+			var n=0;
+			while(n<=200){
+				if(n%10==0){
+					if(n%20==0){
+						bg='#cccccc';
+					}else{
+						bg='#ffffff';
+					}
+					document.write("<tr onmouseover='show(this)' onmouseout='noshow(this)' bgcolor='"+bg+"'><td>"+n+"."+typeof(n)+"#########"+"</td><tr>");
+					
+				}
+				n++;
+			}
+			document.write("</table>");
+			
+			
+			
+			var ys=null;
+			document.write(typeof(ys));
+			function show(obj){
+				ys=obj.bgColor;
+				obj.bgColor="pink";
+			}
+			function noshow(obj){
+				obj.bgColor=ys;
+			}
+		</script>
+	</head>
+	<body>
+		
+	</body>
+</html>

@@ -48,6 +48,32 @@
 			//调用方式二：
 			alert(demoHui(5,8,function(){return 5+8}));
 			
+			
+			//回调函数全用方法二：
+			//1、从这个函数中取出3的倍数；（10，100）
+			//2、从这个函数中取出负数；（-200，200）
+			function getNum(x,y,hi){
+				for(var i=x;i<=y;i++){
+					if(hi(i)){
+					document.write(i+"<br />");
+					}					
+				}												
+			}
+			//相当于 函数变量名：hi = function(num){}
+			//function hi(num){}
+			getNum(10,30,function(num){
+				if(num%3==0)
+				return true;
+				else 
+				return false;
+			});
+			getNum(-20,20,function(num){
+				if(num<0)
+				return true;
+				else 
+				return false;
+			});
+			
 		</script>
 	</head>
 	<body>

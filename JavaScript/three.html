@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>函数的使用</title>
+		<script type="text/javascript">
+			//函数默认参数功能1
+			function test(a,b,c){
+				if(typeof(a) == "undefined")
+					a=5;
+				if(typeof(b) == "undefined")
+					b=6;
+				if(typeof(c) == "undefined")
+					c=7;
+				alert(a+"----"+b+"-----"+c);
+			}
+			test();
+			test(10,20,30);
+			//函数默认参数功能2
+			function test2(a,b,c){
+				a = a ? a : 1;
+				b = b ? b : 2;
+				c = c ? c : 3;
+				alert(a+"----"+b+"----"+c);
+			}
+			test2();
+			
+			//动态参数值
+			function test3(){
+				alert(arguments.length);
+				alert(arguments[3]);
+				
+			}
+			//计算所有的参数的和
+			function test4(){
+				alert(arguments.length);
+				alert(arguments[3]);
+			}
+			test3(1,2,3,4,5,6,7,8);
+			
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

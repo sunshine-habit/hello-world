@@ -7,6 +7,7 @@
 			table(5,10,"yellow","Moccasin",300);
 			table(3,20,"Lavender","pink",500);
 			table(6,12,"lightgreen","Turquoise",600);
+			//声明函数 table
 			function table(rows,cols,bg,bg2,width){
 			document.write("<table border='1px' width='" + width + "' align='center'>");
 			for(var i=0; i<rows; i++){
@@ -28,23 +29,27 @@
 			alert(typeof(table));
 			//函数的声明
 			alert(table);
+			
 			//函数变量，可以赋值给一个变量为函数类型的值
 			var demo=table;
 			demo(5,9,"pink","yellow",800);
+			
 			//可以把函数赋值给一个变量，然后用变量加括号调用			
 			var demo2=function(){
 				alert("@@@@@@@@@@@@@@@@@@@@@@@@");
 			}
 			demo2();
+			
 			//回调函数
 			function demoHui(a,b,fun){
 				return a+b+fun(a,b);
 			}
-			//调用方式一：
-			alert(demoHui(5,8,test));
-			function test(x,y){
-				return x+y;
+			function shican(x,y){
+				return x*y;
 			}
+			//调用方式一：test是实参，结果是53
+			alert(demoHui(5,8,shican));
+			
 			//调用方式二：
 			alert(demoHui(5,8,function(){return 5+8}));
 			
@@ -71,7 +76,7 @@
 				if(num<0)
 				return true;
 				else 
-				return false;
+    			return false;
 			});
 			
 		</script>

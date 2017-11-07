@@ -4,6 +4,7 @@
 		<meta charset="UTF-8">
 		<title>函数的使用</title>
 		<script type="text/javascript">
+
 			//函数默认参数功能1
 			function test(a,b,c){
 				if(typeof(a) == "undefined")
@@ -14,15 +15,21 @@
 					c=7;
 				alert(a+"----"+b+"-----"+c);
 			}
+			//第一次调用，参数未传，abc未赋值
 			test();
+			//第二次调用，abc被赋值
 			test(10,20,30);
+			
 			//函数默认参数功能2
 			function test2(a,b,c){
+				alert(a=a?7:9);
 				a = a ? a : 1;
 				b = b ? b : 2;
 				c = c ? c : 3;
 				alert(a+"----"+b+"----"+c);
 			}
+			
+			//第三次调用
 			test2();
 			
 			//动态参数值
@@ -36,7 +43,18 @@
 				alert(arguments.length);
 				alert(arguments[3]);
 			}
+			
+			function getSum(){
+				var sum=0;
+				var big=arguments.length;
+				for(var i=0;i<big;i++){
+					 sum+=arguments[i];
+				}
+				return sum;
+			}
 			test3(1,2,3,4,5,6,7,8);
+			//计算参数中数组的和
+			alert(getSum(1,2,3,4,5,6,7));
 			
 			
 		</script>
